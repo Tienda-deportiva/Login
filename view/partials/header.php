@@ -108,10 +108,24 @@
                         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-user">&nbsp;<?php echo $_SESSION['nombre']?></i> <span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
+                            <p>Usuarios</p>
                             <li><a href="<?php echo getUrl("Usuarios","Usuarios","getInsert")?>">Registar</a></li>
                             <li><a href="<?php echo getUrl("Usuarios","Usuarios","consult")?>">Consultar</a></li>
+                            <hr>
+                            <p>roles</p>
+                            
+                            <li><a href="<?php echo getUrl("Roles","Roles","getInsert")?>">Registar</a></li>
+                            <li><a href="<?php echo getUrl("Roles","Roles","consult")?>">Consultar</a></li>
+                            <hr>
+                            <p>Clientes</p>
+                            
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","getInsert")?>">Registar</a></li>
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","consult")?>">Consultar</a></li>
+                            <hr>
+                            
                             <li><a href="<?php echo getUrl("Acceso","Acceso","logout")?>" >Cerrar Sesion</a></li>
                         </ul>
+                        
                     </div>
                     <?php 
                         }
