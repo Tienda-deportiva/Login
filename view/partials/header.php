@@ -35,17 +35,18 @@
             <!-- /SEARCH BAR -->
 
             <!-- ACCOUNT -->
-            <div class="col-md-3 clearfix">
+            
+           
+                    <!-- /Wishlist -->
+           
+                <div class="col-md-3 clearfix">
                 <div class="header-ctn">
                     <!-- Wishlist -->
-                    <div>
-                        <a href="../web/login.php">
-                            <i class="fa fa-user"></i>
-                            <span>Mi cuenta</span>
-                        </a>
-                    </div>
-                    <!-- /Wishlist -->
+                        <!-- Yecid -->
+                    <!--Quite el user y lo puse abajo-->
+            
 
+                    <!-- /Wi-->
                     <!-- Cart -->
                     <div class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -88,7 +89,8 @@
                         </div>
                     </div>
                     <!-- /Cart -->
-
+                   
+                   
                     <!-- Menu Toogle -->
                     <div class="menu-toggle">
                         <a href="#">
@@ -97,6 +99,24 @@
                         </a>
                     </div>
                     <!-- /Menu Toogle -->
+
+                    <!--Yecid-->
+                    <?php 
+                        if ($_SESSION['nombre']) {
+                    ?>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user">&nbsp;<?php echo $_SESSION['nombre']?></i> <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","getInsert")?>">Registar</a></li>
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","consult")?>">Consultar</a></li>
+                            <li><a href="<?php echo getUrl("Acceso","Acceso","logout")?>" >Cerrar Sesion</a></li>
+                        </ul>
+                    </div>
+                    <?php 
+                        }
+                    ?>
+                    <!--/yecid-->
                 </div>
             </div>
             <!-- /ACCOUNT -->

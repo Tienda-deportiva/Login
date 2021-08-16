@@ -9,12 +9,16 @@
         echo "<pre>";
         die(print_r($var));
     }
-    function getUrl($modulo,$controlador,$funcion,$parametros=false){
+    function getUrl($modulo,$controlador,$funcion,$parametros=false,$pagina=false){
         //modulos=carpetas dentro de controller
         //controlador=archivos dentro del modulo
         //funcion=metodos dentro del controlador
         //El cuarto parametro nos sirve para enviar informacion atra ves de la URL
-        $url="index.php?modulo=$modulo&controlador=$controlador&funcion=$funcion";
+        if ($pagina==false) {
+            $pagina="index";
+        }
+        $url="$pagina.php?modulo=$modulo&controlador=$controlador&funcion=$funcion";
+        
         if ($parametros!=false) {
             foreach ($parametros as $key=>$valor) {
                 $url .="&$key=$valor";
