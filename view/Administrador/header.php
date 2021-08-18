@@ -9,7 +9,7 @@
 				<div class="col-md-3">
 					<div class="header-logo">
 						<a href="#" class="logo">
-							<img src="./img/logo.jpg"  alt=""> <!--beatriz-->
+							<img src="./img/logo.jpg" alt="">
 						</a>
 					</div>
 				</div>
@@ -25,7 +25,6 @@
 								<option value="1">Deporte Terrestres</option> <!--beatriz-->
 								<option value="1">Deporte Acuáticos</option> <!--beatriz-->
 								<option value="1">Deporte grupal</option> <!--beatriz-->
-								<option value="1">Prendas Deportivas</option> <!--beatriz-->
 							</select>
 							<input class="input" placeholder="Buscar aqui..."> <!--beatriz-->
 							<button class="search-btn" href="<?php echo ""; ?>">Buscar</button> <!--beatriz-->
@@ -101,24 +100,38 @@
 							</a>
 						</div>
 						<!-- /Menu Toogle -->
-						   <!--Yecid-->
-					<?php 
+					</div>
+				</div>
+				<!--Yecid: Menu Desplegable-->
+				<?php 
                         if (@$_SESSION['nombre']) {
                     ?>
                     <div class="btn-group">
                         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa-arrow-alt-circle-down"></i> <span class="caret"></span></button>
+                        <i class="fa fa-user">&nbsp;<?php echo $_SESSION['nombre']?></i> <span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Config</a></li>
+                            <p>Usuarios</p>
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","getInsert")?>">Registar</a></li>
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","consult")?>">Consultar</a></li>
+                            <hr>
+                            <p>roles</p>
+                            
+                            <li><a href="<?php echo getUrl("Roles","Roles","getInsert")?>">Registar</a></li>
+                            <li><a href="<?php echo getUrl("Roles","Roles","consult")?>">Consultar</a></li>
+                            <hr>
+                            <p>Clientes</p>
+                            
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","getInsert")?>">Registar</a></li>
+                            <li><a href="<?php echo getUrl("Usuarios","Usuarios","consult")?>">Consultar</a></li>
+                            <hr>
+                            
                             <li><a href="<?php echo getUrl("Acceso","Acceso","logout")?>" >Cerrar Sesion</a></li>
                         </ul>
+                        
                     </div>
                     <?php 
                         }
                     ?>
-                    <!--/yecid-->
-					</div>
-				</div>
 				<!-- /ACCOUNT -->
 			</div>
 			<!-- row -->

@@ -3,49 +3,50 @@
     <img src="img/login/png/deportes.png" alt="">
 </div>
     <div class="form">
-        <div class="table-title">
-            <div class="row">
-                <div class="col-sm-6"><h2>Registrar <b>Usuario</b></h2></div>
-                <div class="col-sm-4">
-                    <a href="index.php" class="btn btn-info add-new"><i class="fa fa-arrow-left"></i> Regresar</a>
-                </div>
-            </div>
-        </div>
         
         <form action="<?php echo getUrl("Registro","Registro","signup",false)?>" method="post">
             <div class="row">
-                <div class="col-md-6">
-                    <label>Nombres:</label>
-                    <input type="hidden" name="cod_rol">
-                    <input type="text" name="nom_user" id="nombres" class='form-control' maxlength="100" required >
+                <div class="col-md-8">
+                    <input type="number" name="doc_user" class="form-control" placeholder="Ingrese su documento">
                 </div>
-                <div class="col-md-6">
-                    <label>Apellidos:</label>
-                    <input type="text" name="ape_user" id="apellidos" class='form-control' maxlength="100" required >
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="hidden" name="cod_rol">
+                    <input type="text" name="nom_user" id="nombres" class='form-control' maxlength="100" required placeholder="Nombres" >
+                </div>
+                <div class="col-md-4">
+                    <input type="text" name="ape_user" id="apellidos" class='form-control' maxlength="100" required placeholder="Apellidos">
                 </div>
         
             </div>
             <div class="row">
+                <div class="col-md-4">
+                    <input type="text" name="dir_user" class='form-control' placeholder="Direccion">
+                </div>
+                <div class="col-md-4">
+                    <input type="number" name="tel_user" class='form-control' placeholder="Numero telefonico">
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-8">
-                    <label>Correo electrónico:</label>
-                    <input type="email" name="corr_user" id="correo_electronico" class='form-control' maxlength="64" required>
+                    <input type="email" name="corr_user" id="correo_electronico" class='form-control' maxlength="64" required placeholder="Correo Electronico:">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <label>Nombre de usuario</label>
-                    <input type="text" name="login_user" class="form-control">
+                <div class="col-md-8">
+                    <input type="text" name="login_user" class="form-control" placeholder="Nombre de usuario">
                 </div>
             </div>
+        
             <div class="row">
                 <div class="col-md-6">
-                    <label>Contraseña</label>
-                    <input type="password" name="passw_user" class="form-control" id="">
+                    <input type="password" name="pass_user" class="form-control" placeholder="Contraseña">
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <label>Verificar contraseña</label>
                     <input type="password" name="passw_user" class="form-control" id="">
-                </div>
+                </div> -->
             </div>
             <div class="row boton">
                 <div class="col-md-4">

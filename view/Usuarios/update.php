@@ -2,11 +2,17 @@
     <div class="jumbotron">
         <h1>Editar usuarios</h1>
     </div>
-    <div class="form">
+    <div class="form-group">
     <?php 
         while($user=mysqli_fetch_assoc($usuario)){
     ?>
-        <form action="<?php echo getUrl("Usuarios","Usuarios","postUpdate",false)?>" method="post">
+        <form action="<?php echo getUrl("Usuarios","Usuarios","postUpdate",false,"ajax")?>" method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <label >Documento</label>
+                    <input type="number" name="doc_user" class="form-control" placeholder="Ingrese su documento" value="<?php echo $user['doc_user'];?>">
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-6">
                     <label>Nombres:</label>
@@ -18,6 +24,16 @@
                     <input type="text" name="ape_user" id="apellidos" class='form-control' value="<?php echo $user['ape_user'];?>" maxlength="100" required >
                 </div>
         
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Direccion</label>
+                    <input type="text" name="dir_user" class='form-control' placeholder="Direccion" value="<?php echo $user['dir_user'];?>">
+                </div>
+                <div class="col-md-4">
+                    <label >telefono</label>
+                    <input type="number" name="tel_user" class='form-control' placeholder="Numero telefonico" value="<?php echo $user['tel_user'];?>">
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-8">

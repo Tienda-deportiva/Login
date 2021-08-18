@@ -1,58 +1,87 @@
 <!-- SECTION -->
-<!-- SECTION -->
 <div class="section">
     <!-- container -->
     <div class="container">
         <!-- row -->
         <div class="row">
             <!-- shop -->
-            <div class="col-md-4 col-xs-6">
+            <div class="col-md-4 col-xs-8"> <!--beatriz-->
                 <div class="shop">
                     <div class="shop-img">
-                        <img src="./img/shop01.png" alt="">
+                        <img src="./img/prendas.jpg" class="imagen" alt=""> <!--beatriz-->
                     </div>
                     <div class="shop-body">
-                        <h3>Laptop<br>Collection</h3>
-                        <a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+                        <h3>Prendas<br>Deportivas</h3> <!--beatriz-->
+                        <a href="prendas.php" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a> <!--beatriz-->
+                    </div>
+                </div>
+            </div>
+            <!-- /shop -->
+            
+            <!-- shop -->
+            <div class="col-md-4 col-xs-8"> <!--beatriz-->
+                <div class="shop">
+                    <div class="shop-img">
+                        <img src="./img/aereo.jpg" alt=""> <!--beatriz-->
+                    </div>
+                    <div class="shop-body">
+                        <h3>Deportes<br>Aéreos</h3> <!--beatriz-->
+                        <a href="aereo.php" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a> <!--beatriz-->
                     </div>
                 </div>
             </div>
             <!-- /shop -->
 
             <!-- shop -->
-            <div class="col-md-4 col-xs-6">
+            <div class="col-md-4 col-xs-8"> <!--beatriz-->
                 <div class="shop">
                     <div class="shop-img">
-                        <img src="./img/shop03.png" alt="">
+                        <img src="./img/terrestre.jpg" alt="" class="mt-5"> <!--beatriz-->
                     </div>
                     <div class="shop-body">
-                        <h3>Accessories<br>Collection</h3>
-                        <a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+                        <h3>Deportes<br>Terrestres</h3> <!--beatriz-->
+                        <a href="terrestre.php" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a> <!--beatriz-->
                     </div>
                 </div>
             </div>
             <!-- /shop -->
 
             <!-- shop -->
-            <div class="col-md-4 col-xs-6">
+            <div class="col-md-4 col-xs-8"> <!--beatriz-->
                 <div class="shop">
                     <div class="shop-img">
-                        <img src="./img/shop02.png" alt="">
+                        <img src="./img/acuatico.jpg" alt=""> <!--beatriz-->
                     </div>
                     <div class="shop-body">
-                        <h3>Cameras<br>Collection</h3>
-                        <a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+                        <h3>Deportes<br>Acuáticos</h3> <!--beatriz-->
+                        <a href="acuatico.php" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a> <!--beatriz-->
                     </div>
                 </div>
             </div>
             <!-- /shop -->
+
+            <!-- shop -->
+            <div class="col-md-4 col-xs-8"> <!--beatriz-->
+                <div class="shop">
+                    <div class="shop-img">
+                        <img src="./img/grupal.jpg" alt=""> <!--beatriz-->
+                    </div>
+                    <div class="shop-body">
+                        <h3>Deportes<br>Grupales</h3> <!--beatriz-->
+                        <a href="grupal.php" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a> <!--beatriz-->
+                    </div>
+                </div>
+            </div>
+            <!-- /shop -->
+
         </div>
         <!-- /row -->
     </div>
     <!-- /container -->
 </div>
-
 <!-- /SECTION -->
+
+<!-- SECTION -->
 <div class="section">
     <!-- container -->
     <div class="container">
