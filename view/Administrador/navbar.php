@@ -45,8 +45,6 @@
             <p>Clientes</p>
               <li><a href="<?php echo getUrl("Usuarios","Usuarios","getInsert")?>">Registar</a></li>
               <li><a href="<?php echo getUrl("Usuarios","Usuarios","consult")?>">Consultar</a></li>
-            <hr>
-              <li><a href="<?php echo getUrl("Acceso","Acceso","logout")?>" >Cerrar Sesion</a></li>
           </ul>
         <!--/yecid-->
       </ul>

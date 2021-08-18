@@ -14,9 +14,9 @@ body {
     background: rgb(75, 14, 14);
 }
 .form{
-    width: 70%;
+    width:35%;
     height: 85vh;
-    margin: 30px auto;
+    margin:auto;
     background: rgba(2, 3, 59, 0.425);
     border-radius: 10px;
     padding: 20px;	
@@ -40,9 +40,10 @@ body {
     border-radius: 50px;
     line-height: 13px;
 }
-h2{
+h1{
     color: white;
     text-align: center;
+    font-family:Times-new roma;
 }
 .boton{
     margin-top: 40px;

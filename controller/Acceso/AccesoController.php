@@ -25,7 +25,7 @@
 
                     switch ( $_SESSION['rol']) {
                         case 1:
-                            redirect ("index.php"); // Pagina de administrador
+                            redirect ("administrador.php"); // Pagina de administrador
                         break;
                         
                         case 2:
